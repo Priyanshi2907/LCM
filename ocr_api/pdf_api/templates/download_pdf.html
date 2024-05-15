@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download Button</title>
+</head>
+<body>
+    <h1>Download PDFs and Save to Database</h1>
+    {% block content %}
+    {% load static %}
+       <h1>PDF Files</h1>
+       <ul>
+       {% for file in pdf_files %}
+       <li>
+        <a href="{% url 'save_pdf' file.filepath %}"  target="_blank">{{ file.filename }}</a>
+        {% comment %} <a href="{{ pdf_file.filepath }}" onclick="showPdf('{{ pdf_file.filepath }}')"  target="_blank">{{ pdf_file.filename }}</a> {% endcomment %}
+
+      </li>
+       {% empty %}
+       <li>No PDF files found.</li>
+       {% endfor %}
+       </ul>
+       {% comment %} <iframe id="pdf-viewer" type="application/pdf" data="" style="width: 100%; height: 600px;"></iframe> {% endcomment %}
+       {% comment %} <script>
+         function showPdf(pdf_file.filepath) {
+           window.open(pdf_file.filepath, "_blank");
+
+         }
+       </script> {% endcomment %}
+    {% endblock %}
+</body>
+</html>

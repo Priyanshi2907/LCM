@@ -1,0 +1,46 @@
+streamlit
+google-generativeai
+python-dotenv
+langchain
+langchain-community
+PyPDF2
+scikit-learn
+chromadb
+pillow
+faiss-cpu
+ipython
+# json
+langchain_google_genai
+pytesseract
+tesseract
+# ghostscript installation
+# tesseract installation
+deep_translator
+ghostscript
+ocrmypdf
+Spire.Doc
+Spire.XLS
+Spire.Presentation
+googletrans==4.0.0-rc1c
+googletrans==4.0.0-rc1 #very important
+openai
+
+#pytesseract
+ocrmypdf
+pdf2image
+numpy
+#opencv-python
+PyPDF2
+pymupdf
+#easyocr
+#matplotlib
+azure-cognitiveservices-vision-computervision
+reportlab
+python-dotenv
+
+
+azure-cognitiveservices-vision-computervision
+pdf2image
+Pillow
+reportlab
+boto3

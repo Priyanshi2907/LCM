@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload PDF</title>
+</head>
+<body>
+    <h2>Upload PDF Files</h2>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h3>PCL PDF</h3>
+        <input type="file" name="pcl_pdf_file">
+        <br>
+        <input type="submit" name="pcl_submit" value="Upload PCL PDF">
+    </form>
+    <br>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h3>LOA PDF</h3>
+        <input type="file" name="loa_pdf_file">
+        <br>
+        <input type="submit" name="loa_submit" value="Upload LOA PDF">
+    </form>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h3>RAC PDF</h3>
+        <input type="file" name="rac_pdf_file">
+        <br>
+        <input type="submit" name="rac_submit" value="Upload RAC PDF">
+    </form>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h3>APP PDF</h3>
+        <input type="file" name="app_pdf_file">
+        <br>
+        <input type="submit" name="app_submit" value="Upload APP PDF">
+    </form>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h3>LO PDF</h3>
+        <input type="file" name="lo_pdf_file">
+        <br>
+        <input type="submit" name="lo_submit" value="Upload LO PDF">
+    </form>
+    <!-- Add more file upload sections with separate submit buttons as needed -->
+</body>
+</html>
